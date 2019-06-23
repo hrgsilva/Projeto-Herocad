@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Página Principal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Imports do css -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<!-- Termina os imports -->
+	<!-- Importa o javascript-->
+	<script src="bootstrap.min.js"></script>
+	<script src="jquery-3.4.1.min.js"></script>
+	<!-- Termina o import java-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- Cabeçalho do site, NAVBAR Bootstrap -->
+	<header>
+		<nav id="posnav" class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" class="col-md-1"> <!-- sistema de grid do bootstrap ----------------------->
+		  	<!-- Logo -->
+			  	<a class="navbar-brand" href="#"><img src="img/logo.png" width="40" height="30" class="d-inline-block align-top" alt="">HeroCad</a>
+			<!-- Termina linha do logo -->
+			</div>
+			<!-- menu dropdown -->
+				<div class="col-md-2"> <!-- sistema de grid do bootstrap ----------------------->
+				    <ul class="navbar-nav">
+				    	<li class="nav-item active">
+				        	<a class="nav-link" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-align-justify"></i> Categorias</a>
+				        	  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    							    <a class="dropdown-item" href="#"><i class="fas fa-network-wired"></i> - Desenvolvimento</a>
+    							    <a class="dropdown-item" href="#"><i class="fab fa-microsoft"></i> - Software</a>
+    							    <a class="dropdown-item" href="#"><i class="fas fa-sim-card"></i> - Hardware</a>
+    							    <a class="dropdown-item" href="#"><i class="fab fa-internet-explorer"></i> - Redes</a>
+    							    <a class="dropdown-item" href="#"><i class="fas fa-network-wired"></i> - Iot</a>
+                      <a class="dropdown-item" href="#"><i class="fas fa-network-wired"></i> - Matemámatica</a>
+    							    <a class="dropdown-item" href="#"><i class="fas fa-network-wired"></i> - Desenvolvimento</a>
+    							    <a class="dropdown-item" href="#"><i class="fab fa-microsoft"></i> - Software</a>
+    							    <a class="dropdown-item" href="#"><i class="fas fa-sim-card"></i> - Hardware</a>
+    							    <a class="dropdown-item" href="#"><i class="fab fa-internet-explorer"></i> - Redes</a>
+    							    <a class="dropdown-item" href="#"><i class="fas fa-network-wired"></i> - Iot</a>
+    							    <a class="dropdown-item" href="#"><i class="fas fa-network-wired"></i> - Matemámatica</a>
+							     </div>
+				    	</li>
+				    </ul>
+        </div>
+			<!-- Termina menu dropdown -->
+			<div style="padding-top: 18px;" class="col-md-6"> <!-- sistema de grid do bootstrap ----------------------->
+				<div  class="input-group mb-3">
+					<input type="text" class="form-control" placeholder="Encontre seu curso" aria-describedby="basic-addon2">
+				<div class="input-group-append">
+				    <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+				</div>
+			</div>
+			</div>
+
+			<div class="col-md-3"> <!-- sistema de grid do bootstrap ----------------------->
+				<div class="btn-group" style="padding-left: 70px;" role="group">
+					<button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sign-in-alt"></i> Logar</button>
+
+          <!-- Login DROPDOWN -->
+
+          <div class="dropdown-menu" style="opacity: 0.9;">
+            <div class="container" class="opacidade">
+              <h5>Logar em</h5>
+              <div>
+                
+              </div >
+                <div class="down">
+                <button class="btn btn-primary"><i class="fab fa-facebook-f"></i> Facebook</button>
+                <button class="btn btn-info"><i class="fab fa-twitter"></i> Twitter</button>
+              </div>
+              <h5>ou</h5>
+              <div class="down">
+                <label for="inputEmail" class="sr-only">E-mail</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="E-mail or Login" required="" autofocus="">
+              </div>
+              <div class="down">
+                <label for="inputPassword" class="sr-only">Senha</label>
+                <input type="text" id="inputPassword" class="form-control" placeholder="Senha" required="" autofocus="">
+              </div>
+              <div class="down">
+                <a href="#Recovery" data-toggle="modal">Esqueceu sua senha?</a>
+              </div>
+              <div>
+                <button class="btn btn-danger btn-sm btn-block">Logar</button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">Mantenha-me Logado</label>
+              </div>
+            </div>
+          </div>
+          <!-- TERMINA O O LOGIN DROPDOWN -->
+
+					<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#formherocad"><i class="fas fa-address-card"></i> Registrar</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+<!-- Modal bootstrap -->
+  <!-- The Modal -->
+  <div class="modal fade" id="formherocad">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Formulário de Cadastro</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          
+          <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First Name</label>
+      <input type="text" class="form-control" id="validationCustom01">
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last Name</label>
+      <input type="text" class="form-control" id="validationCustom02">
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">E-mail</label>
+      <input type="text" class="form-control" id="validationCustom03">
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Password</label>
+      <input type="text" class="form-control" id="validationCustom04">
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Confirm Password</label>
+      <input type="text" class="form-control" id="validationCustom05">
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-danger" type="submit">Submit form</button>
+
+</form>
+
+  </div>
+        <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+<!-- Termina o modal -->
+
+
+<!-- MODAL 2 -->
+
+<div class="modal fade" id="Recovery" tabindex="-1" role="dialog" aria-labelledby="Modal-recovery" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Recuperar e-mail</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <input type="email" class="form-control" id="emailrec" placeholder="Email">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Recuperar acesso</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TERMINA SEGUNDO MODAL -->
+
+
+	<!-- Estrutura de conteúdo do site -->
+
+
+	<!-- Carrousel Bootstrap -->
+
+<div style="padding-top: 50px; height: 570px;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<!-- lista de imagens do carrousel -->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+
+<!-- Cada div refere-se a uma imagem do carousel -->
+
+  <div style="height: 570px; position: relative;" class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/car1.jpg" alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/car2.jpg" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/car3.jpg" alt="Terceiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/car1.jpg" alt="Quarto Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/car1.jpg" alt="Quinto Slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+
+<!-- Fim carousel -->
+
+<!-- Lista de cursos -->
+
+<div class="container">
+
+ <p style="position: relative; padding-top: 65px; text-align: center; font-size: 30px;"> 
+ <i class="fas fa-trophy"></i> Melhores Cursos <i class="fas fa-trophy"></i></p>
+ <div style="padding-right: 18px; padding-left: 18px;" class="row">
+  <hr>
+      <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="img/courses/1.png" alt="Lights" style="width:100%">
+            <div class="caption">
+
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/nature.jpg" target="_blank">
+            <img src="img/courses/2.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/fjords.jpg" target="_blank">
+            <img src="img/courses/3.jpg" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+  <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/fjords.jpg" target="_blank">
+            <img src="img/courses/4.png" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+  <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/fjords.jpg" target="_blank">
+            <img src="img/courses/5.jpg" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+  <div class="col-md-2">
+      <div class="img-thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="img/courses/6.png" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- parte 2 -->
+
+  <div style="padding-top: 60px; padding-right: 18px; padding-left: 18px;" class="row">
+      <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/lights.jpg" target="_blank">
+            <img src="img/courses/1.png" alt="Lights" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/nature.jpg" target="_blank">
+            <img src="img/courses/2.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/fjords.jpg" target="_blank">
+            <img src="img/courses/3.jpg" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+  <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/fjords.jpg" target="_blank">
+            <img src="img/courses/4.png" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+  <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/fjords.jpg" target="_blank">
+            <img src="img/courses/5.jpg" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+  <div class="col-md-2">
+        <div class="img-thumbnail">
+          <a href="/w3images/fjords.jpg" target="_blank">
+            <img src="img/courses/6.png" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+	<!-- Aqui termina essa estrutura -->
+	<footer style="background-color: #E5367B;">     
+    <!-- Footer Elements -->
+  <div class="container">
+    <!-- Grid row-->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 d-flex justify-content-center">
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row-->
+  </div>
+  <!-- Footer Elements -->
+  <!-- Copyright -->
+  <div style="background-color: #E20143; color: white;" class="footer-copyright text-center py-3">© 2018 Copyright: HeroCad</div>
+  <!-- Copyright -->
+  <!-- Import Scripts-->
+    <script src="java/main.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Fim Scripts-->
+  </footer>
+</body>
+</html>
